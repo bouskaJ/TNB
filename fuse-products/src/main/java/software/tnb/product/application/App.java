@@ -78,7 +78,7 @@ public abstract class App {
     }
 
     public void waitUntilReady() {
-        WaitUtils.waitFor(() -> isReady() && isCamelStarted(), this::isFailed, 8000L, "Waiting until the integration " + name + " is running");
+        WaitUtils.waitFor(() -> isReady() && isCamelStarted(), this::isFailed, 80000L, "Waiting until the integration " + name + " is running");
         started = true;
     }
 
